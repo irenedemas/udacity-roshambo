@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choice View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ChoiceViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take Your Pick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ch7-bx-iLX">
+                                <rect key="frame" x="135" y="334" width="105.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uf2-bw-84H">
+                                <rect key="frame" x="16" y="190" width="77" height="98"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <state key="normal" title="💎"/>
+                                <connections>
+                                    <action selector="playRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="16k-2u-i0f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDA-8c-D0B">
+                                <rect key="frame" x="149" y="190" width="77" height="98"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <state key="normal" title="📄"/>
+                                <connections>
+                                    <action selector="playPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ukH-nc-QBy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyD-1b-pcS">
+                                <rect key="frame" x="282" y="190" width="77" height="98"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <state key="normal" title="✂️"/>
+                                <connections>
+                                    <action selector="playScissors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HBv-la-YIL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zY-m2-Vpd">
+                                <rect key="frame" x="54" y="399.5" width="77" height="98"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <state key="normal" title="🦎"/>
+                                <connections>
+                                    <action selector="playLizard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Lo-x6-kfU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x93-O5-RQK">
+                                <rect key="frame" x="243" y="399.5" width="77" height="98"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <state key="normal" title="🖖"/>
+                                <connections>
+                                    <action selector="playSpock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aVb-py-cQX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XyD-1b-pcS" firstAttribute="centerY" secondItem="sDA-8c-D0B" secondAttribute="centerY" id="2c3-Ys-Hvc"/>
+                            <constraint firstItem="XyD-1b-pcS" firstAttribute="leading" secondItem="sDA-8c-D0B" secondAttribute="trailing" constant="56" id="4EQ-EX-hG2"/>
+                            <constraint firstItem="ch7-bx-iLX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="D61-bZ-hba"/>
+                            <constraint firstItem="uf2-bw-84H" firstAttribute="centerY" secondItem="sDA-8c-D0B" secondAttribute="centerY" id="EdC-ai-j8L"/>
+                            <constraint firstItem="sDA-8c-D0B" firstAttribute="leading" secondItem="uf2-bw-84H" secondAttribute="trailing" constant="56" id="Hhf-iL-U5f"/>
+                            <constraint firstItem="sDA-8c-D0B" firstAttribute="centerX" secondItem="ch7-bx-iLX" secondAttribute="centerX" id="LPr-yu-jlL"/>
+                            <constraint firstItem="1zY-m2-Vpd" firstAttribute="top" secondItem="ch7-bx-iLX" secondAttribute="bottom" constant="46" id="TIu-Rs-XUP"/>
+                            <constraint firstItem="x93-O5-RQK" firstAttribute="top" secondItem="ch7-bx-iLX" secondAttribute="bottom" constant="46" id="av2-5B-IF9"/>
+                            <constraint firstItem="x93-O5-RQK" firstAttribute="leading" secondItem="1zY-m2-Vpd" secondAttribute="trailing" constant="112" id="eAk-pr-MSm"/>
+                            <constraint firstItem="ch7-bx-iLX" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="edi-sw-Ycy"/>
+                            <constraint firstItem="ch7-bx-iLX" firstAttribute="top" secondItem="sDA-8c-D0B" secondAttribute="bottom" constant="46" id="iK4-zE-Cuy"/>
+                            <constraint firstItem="x93-O5-RQK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="94" id="pye-rS-uJf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="uPT-Do-JOX" kind="presentation" identifier="play" id="fYg-Sd-wSt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="FBN-ZB-xhe">
+            <objects>
+                <viewController id="uPT-Do-JOX" customClass="ResultViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="Clj-Ox-XYg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNX-87-h3h">
+                                <rect key="frame" x="169" y="409" width="36" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="🔄"/>
+                                <connections>
+                                    <action selector="playAgain" destination="uPT-Do-JOX" eventType="touchUpInside" id="sL5-bH-sNd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiK-sg-J5T">
+                                <rect key="frame" x="149.5" y="476" width="75" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMO-Pc-JAt" userLabel="textResult">
+                                <rect key="frame" x="100" y="314.5" width="175" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tie" translatesAutoresizingMaskIntoConstraints="NO" id="AFp-9i-J4C" userLabel="imageResult">
+                                <rect key="frame" x="150" y="183.5" width="75" height="75"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HiK-sg-J5T" firstAttribute="centerX" secondItem="YNX-87-h3h" secondAttribute="centerX" id="0qa-aR-YR5"/>
+                            <constraint firstItem="PMO-Pc-JAt" firstAttribute="top" secondItem="AFp-9i-J4C" secondAttribute="bottom" constant="56" id="CPH-fc-ErV"/>
+                            <constraint firstItem="AFp-9i-J4C" firstAttribute="centerX" secondItem="PMO-Pc-JAt" secondAttribute="centerX" id="LzI-SY-TJA"/>
+                            <constraint firstItem="HiK-sg-J5T" firstAttribute="top" secondItem="YNX-87-h3h" secondAttribute="bottom" constant="16" id="Rtd-Wc-Rs8"/>
+                            <constraint firstItem="YNX-87-h3h" firstAttribute="top" secondItem="PMO-Pc-JAt" secondAttribute="bottom" constant="56" id="WfN-6u-jIq"/>
+                            <constraint firstItem="YNX-87-h3h" firstAttribute="centerX" secondItem="PMO-Pc-JAt" secondAttribute="centerX" id="fg8-5H-TDg"/>
+                            <constraint firstItem="PMO-Pc-JAt" firstAttribute="centerY" secondItem="Clj-Ox-XYg" secondAttribute="centerY" id="hy5-xP-WFE"/>
+                            <constraint firstItem="PMO-Pc-JAt" firstAttribute="centerX" secondItem="Clj-Ox-XYg" secondAttribute="centerX" id="ydF-zh-pME"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AHq-ip-N4M"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VDo-ae-reQ"/>
+                    <connections>
+                        <outlet property="resultImage" destination="AFp-9i-J4C" id="vez-Es-wRq"/>
+                        <outlet property="resultLabel" destination="PMO-Pc-JAt" id="EzL-uE-6Km"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mlh-Go-njQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1439" y="32"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tie" width="75" height="75"/>
+    </resources>
+</document>
