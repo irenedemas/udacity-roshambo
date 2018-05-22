@@ -38,7 +38,7 @@ class ResultViewController: UIViewController {
     func displayResult() {
         var imageResult: String
         var textResult: String
-        let matchup = "\(userChoice.rawValue) VS \(opponentChoice.rawValue)"
+        let matchup = "\(userChoice.rawValue) vs \(opponentChoice.rawValue)"
 
         switch (userChoice!, opponentChoice) {
         case let (user, opponent) where user == opponent:
@@ -51,7 +51,9 @@ class ResultViewController: UIViewController {
             textResult = "You lose with \(matchup)!"
             imageResult = "lose"
         }
-        
+    
+        resultImage.image = UIImage(named: imageResult)
+        resultLabel.text = textResult
     }
     
     @IBAction func playAgain() {
