@@ -24,8 +24,8 @@ enum Shape: String {
 
 class ResultViewController: UIViewController {
     
-    @IBOutlet private weak var resultImage: UIImageView!
-    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet var resultImage: UIImageView!
+    @IBOutlet var resultLabel: UILabel!
     
     var userChoice: Shape!
     let opponentChoice: Shape = Shape.randomShape()
